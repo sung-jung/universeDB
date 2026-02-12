@@ -276,6 +276,12 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.galaxy VALUES (1, 'Milky Way', 13.60, 120000, true, 'A large barred spiral galaxy that contains our Solar System, comprising 100–400 billion stars, gas, dust, and dark matter.');
+INSERT INTO public.galaxy VALUES (2, 'Andromeda', 10.40, 220000, false, 'Nearest spiral galaxy to the Milky Way.');
+INSERT INTO public.galaxy VALUES (3, 'Triangulum', 12.80, 60000, false, 'A spiral galaxy in the Local Group.');
+INSERT INTO public.galaxy VALUES (4, 'Whirlpool', 8.00, 80000, false, 'Interacting grand-design spiral galaxy.');
+INSERT INTO public.galaxy VALUES (5, 'Sombrero', 13.25, 49000, false, 'Unusual galaxy with a bright nucleus.');
+INSERT INTO public.galaxy VALUES (6, 'Messier 87', 13.24, 240000, false, 'Supergiant elliptical galaxy with a massive black hole.');
 
 
 --
@@ -307,7 +313,7 @@ SELECT pg_catalog.setval('public.asteroid_asteroid_id_seq', 1, false);
 -- Name: galaxy_galaxy_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 1, false);
+SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 6, true);
 
 
 --
